@@ -1,0 +1,55 @@
+package com.danish.common.utils
+
+import java.text.SimpleDateFormat
+import java.util.*
+
+class DateUtils {
+
+    private fun getDayOfMonthSuffix(day: Int): String {
+        return if (day in 11..13) {
+            "th"
+        } else {
+            when (day % 10) {
+                1 -> "st"
+                2 -> "nd"
+                3 -> "rd"
+                else -> "th"
+            }
+        }
+    }
+
+    fun String.formatDateToMonthDayYear(): String? {
+        return try {
+            val inputFormat = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'", Locale.getDefault())
+            val outputFormat = SimpleDateFormat("MMM dd, yyyy", Locale.getDefault())
+
+            inputFormat.timeZone = TimeZone.getTimeZone("UTC")
+            outputFormat.timeZone = TimeZone.getDefault()
+
+            val date = inputFormat.parse(this)
+            if (date != null) {
+                outputFormat.format(date)
+            } else null
+        } catch (e: Exception) {
+            null
+        }
+    }
+
+    fun String.formatDateToMonthDayYearTime(): String? {
+        return try {
+            val inputFormat = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'", Locale.getDefault())
+            val outputFormat = SimpleDateFormat("MMM dd, yyyy, HH:mm", Locale.getDefault())
+
+            inputFormat.timeZone = TimeZone.getTimeZone("UTC")
+            outputFormat.timeZone = TimeZone.getDefault()
+
+            val date = inputFormat.parse(this)
+            if (date != null) {
+                outputFormat.format(date)
+            } else null
+        } catch (e: Exception) {
+            null
+        }
+    }
+
+} 

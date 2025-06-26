@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="stage_app_name" translatable="false">Stage</string>
+    <string name="back">← Back</string>
+    <string name="play_movie">▶ Play Movie</string>
+    <string name="watched">%1$s% watched</string>
+    <string name="play">▶ Play</string>
+    <string name="more_info">More Info</string>
+    <string name="exit">Exit</string>
+    <string name="to_seek">◀ ▶ to seek</string>
+    <string name="_10s">⏪ 10s</string>
+    <string name="next_10s">10s ⏩</string>
+    <string name="seek_navigate_ok_select_back_hide">◀ ▶ Seek • ▲ ▼ Navigate • OK Select • BACK Hide</string>
+    <string name="navigate_ok_select_back_hide_controls">▲ ▼ ◀ ▶ Navigate • OK Select • BACK Hide controls</string>
+</resources>

@@ -1,0 +1,54 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.SampleHiltRx" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="android:windowBackground">@color/white</item>
+        <!-- Native Splash Screen. -->
+        <item name="android:windowSplashScreenAnimatedIcon" tools:targetApi="s">
+            @mipmap/ic_launcher_foreground
+        </item>
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryVariant">@color/color_primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorAccent">@color/color_accent</item>
+        <item name="color">@color/color_primary</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/color_Secondary</item>
+        <item name="colorSecondaryVariant">@color/color_Secondary</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/color_primary</item>
+        <!--        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>-->
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name="Theme.SampleHiltRx.LoginSignUp" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/yellow</item>
+        <!--        <item name="android:windowLightStatusBar" >false</item>-->
+    </style>
+
+    <style name="SplashTheme" parent="@style/Theme.AppCompat.Light">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/color_Secondary</item>
+        <item name="android:windowSplashScreenAnimatedIcon" tools:targetApi="s">@mipmap/ic_launcher_foreground</item>
+        <item name="android:windowSplashScreenBackground" tools:targetApi="s">@color/color_Secondary</item>
+        <item name="android:windowSplashScreenIconBackgroundColor" tools:targetApi="s">@color/color_Secondary</item>
+    </style>
+
+
+    <style name="Theme.CustomSplashScreenTheme" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/color_Secondary</item>
+        <item name="android:windowBackground">@color/color_Secondary</item>
+        <item name="android:windowSplashScreenAnimatedIcon" tools:targetApi="s">@mipmap/ic_launcher_foreground</item>
+        <item name="windowSplashScreenAnimationDuration">300</item>
+        <item name="android:windowSplashScreenBehavior" tools:targetApi="tiramisu">icon_preferred</item>
+        <item name="postSplashScreenTheme">@style/Theme.SampleHiltRx</item>
+    </style>
+
+
+</resources>

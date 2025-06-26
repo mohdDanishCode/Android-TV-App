@@ -1,0 +1,7 @@
+rootProject.name = "Android TV App"
+include ':stage-app'
+include ':core'
+include ':core-network'
+include ':core-businesslogic'
+include ':core-datasource'
+include ':core-domain'
